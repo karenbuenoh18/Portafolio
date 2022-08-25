@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+      body{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+      .presentacion{
+          background-color: rgb(178, 140, 240);
+          /*quise cambiar este background-color con un background-image, 
+          siguiendo la misma sintaxis del ejercicio, pero solo me aparece en blanco*/
+          height: 570px;
+          margin: 3mm;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+      h1{
+        color: aliceblue;
+      }    
+      nav {background-color:rgb(192, 196, 191);
+            height: 50px;    
+      }
+
+      nav a:link, a:visited{color:rgb(17, 18, 17);}    
+        nav a:hover, a:active{color: lightcoral;}
+    </style>
+</head>
+<header>
+  <nav class="menu"> 
+    <!--Este menú lo quiero poner abajo de mi h4, pero al parecer 
+    tengo que crear botones-->
+      <a href="#">Sobre mí</a>
+      <a href="#">Estudios</a>
+      <a href="#">Portafolio</a>
+      <a href="#">Contacto</a>
+  </nav>
+  <!--Estos botones se encargan de cambiar el idioma, falta ponerlos en la esquina superior derecha-->
+  <div class="btn" text-align: left><a href="#">ESP</a></div>
+  <div class="btn" text-align: left><a href="#">ING</a></div>
+</header>
+<body>
+  <section class="presentacion">
+ 
+    <h1> Melissa B. Hernández </h1> 
+    <h4> Desarrolladora Java Full Stack Jr.</h4>
+    <!--En esta parte yo intenté separar los h's, pero no pude y no encontré
+    la forma de bajarlos, incluso seguí el primer ejercicio que hicimos y use <br>
+  pero no funcionó-->
+  </section> 
+</body>
+</html>
