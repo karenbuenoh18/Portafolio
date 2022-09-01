@@ -1,56 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <style>
-      body{
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          }
-      .presentacion{
-          background-color: rgb(178, 140, 240);
-          /*quise cambiar este background-color con un background-image, 
-          siguiendo la misma sintaxis del ejercicio, pero solo me aparece en blanco*/
-          height: 570px;
-          margin: 3mm;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          }
-      h1{
-        color: aliceblue;
-      }    
-      nav {background-color:rgb(192, 196, 191);
-            height: 50px;    
-      }
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-      nav a:link, a:visited{color:rgb(17, 18, 17);}    
-        nav a:hover, a:active{color: lightcoral;}
-    </style>
-</head>
-<header>
-  <nav class="menu"> 
-    <!--Este menú lo quiero poner abajo de mi h4, pero al parecer 
-    tengo que crear botones-->
-      <a href="#">Sobre mí</a>
-      <a href="#">Estudios</a>
-      <a href="#">Portafolio</a>
-      <a href="#">Contacto</a>
-  </nav>
-  <!--Estos botones se encargan de cambiar el idioma, falta ponerlos en la esquina superior derecha-->
-  <div class="btn" text-align: left><a href="#">ESP</a></div>
-  <div class="btn" text-align: left><a href="#">ING</a></div>
-</header>
-<body>
-  <section class="presentacion">
- 
-    <h1> Melissa B. Hernández </h1> 
-    <h4> Desarrolladora Java Full Stack Jr.</h4>
-    <!--En esta parte yo intenté separar los h's, pero no pude y no encontré
-    la forma de bajarlos, incluso seguí el primer ejercicio que hicimos y use <br>
-  pero no funcionó-->
-  </section> 
+    <title>Portafolio</title>
+  </head>
+<body class="container1">
+    <header>
+        <nav class="barra">
+            <div class="navbar-end navbar-dark bg-dark"> <!--Bootstrap-->
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link esp" href="#">Español</a> <!--Bootstrap-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link eng" href="#">English</a> <!--Bootstrap-->
+                    </li>
+                </ul>
+            </div>
+        </nav><!--Encabezado | idiomas-->
+    </header>
+    <section class="container2">
+        <div>
+            <div>
+                <h1> Melissa B. Hernández </h1>
+                <h4 style="color: azure"> <ins> Desarrolladora Java Full Stack Jr | Economista Industrial </ins></h4>
+                <hr>
+                <div class="fondo">
+                    <img src="perfil.jpg" alt="perfil de Karen Bueno" class="img-fluid, rounded-circle" width="300" 
+                        height="300">
+                </div>
+            </div>
+            <div class="container3">
+                <button type="button" class="btn btn-info">Sobre Mí</button> <!--Bootstrap-->
+                <button type="button" class="btn btn-dark">Estudios</button> <!--Bootstrap-->
+                <button type="button" class="btn btn-info">Portafolio</button> <!--Bootstrap-->
+                <button type="button" class="btn btn-dark">Contacto</button> <!--Bootstrap-->
+            </div>
+        </div>
+    </section> <!--section | este container encierra los encabezados, fotografía y botones.-->    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+
 </body>
 </html>
